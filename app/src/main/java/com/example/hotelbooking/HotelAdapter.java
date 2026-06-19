@@ -41,7 +41,7 @@ public class HotelAdapter extends RecyclerView.Adapter<HotelAdapter.HotelViewHol
         holder.tvRooms.setText("Available Rooms: " + hotel.getRooms());
         // For actual images, we'd use Glide or Picasso. Using placeholder for now.
         holder.ivHotel.setImageResource(android.R.drawable.ic_menu_gallery);
-        
+
         holder.itemView.setOnClickListener(v -> listener.onHotelClick(hotel));
     }
 
