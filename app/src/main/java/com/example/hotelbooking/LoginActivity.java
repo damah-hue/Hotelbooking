@@ -45,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
                         int userId = (idIndex != -1) ? cursor.getInt(idIndex) : -1;
                         String role = (roleIndex != -1) ? cursor.getString(roleIndex) : "user";
                         Toast.makeText(LoginActivity.this, "Login successful", Toast.LENGTH_SHORT).show();
-                        
+
                         if (role.equals("admin")) {
                             Intent intent = new Intent(LoginActivity.this, AdminActivity.class);
                             startActivity(intent);
